@@ -7,7 +7,7 @@ const messageSchema = new mongoose.Schema({
     text : String,
     status : String,
     direction : String,
-    CreatedAt : String,
+    createdAt : String,
     updatedAt : String
 
 })
