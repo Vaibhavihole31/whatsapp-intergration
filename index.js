@@ -60,7 +60,7 @@ app.post("/send",async(req,res)=>{
             text : response.data.body,
             status : response.data.status,
             direction : 'outgoing',
-            CreatedAt : response.data.date_created,
+            createdAt : response.data.date_created,
             updatedAt : response.data.date_updated
          })
 
@@ -116,7 +116,7 @@ const messageObj = new message({
     text : req.body.Body,
     status : req.body.smsStatus,
     direction : 'incoming',
-    CreatedAt :new Date().toISOString,
+    createdAt :new Date().toISOString,
     updatedAt : new Date().toDateString
  })
  await messageObj.save()
